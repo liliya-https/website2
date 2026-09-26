@@ -1,0 +1,776 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #222;
+
+    background-image: url("IMAGES/fon.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =========================================
+   ОБЩАЯ ШИРИНА
+   ========================================= */
+
+.content-width {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   ШАПКА
+   ========================================= */
+
+.site-header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 2px solid #667E4A;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 960px;
+    min-height: 170px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+
+    padding: 20px;
+}
+
+/* =========================================
+   ЛОГОТИП
+   ========================================= */
+
+.header-image-wrapper {
+    flex: 0 0 180px;
+    width: 180px;
+    height: 140px;
+
+    overflow: hidden;
+}
+
+.header-bg-img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+/* =========================================
+   НАЗВАНИЕ УНИВЕРСИТЕТА
+   ========================================= */
+
+.header-text-group {
+    flex: 0 1 auto;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+
+    color: #445533;
+
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    text-align: center;
+
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* =========================================
+   МЕНЮ
+   ========================================= */
+
+.site-nav {
+    width: 100%;
+    background: #667E4A;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-nav a {
+    display: block;
+
+    padding: 12px 28px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background: #53663b;
+}
+
+/* =========================================
+   ОСНОВНОЙ КОНТЕНТ
+   ========================================= */
+
+main.content-width {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    padding: 25px 30px;
+
+    background: rgba(255, 255, 255, 0.86);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: #445533;
+    font-size: 25px;
+}
+
+/* =========================================
+   ССЫЛКИ
+   ========================================= */
+
+.links-list {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.links-list li {
+    margin: 6px 0;
+    padding: 0;
+}
+
+.links-list p {
+    margin: 0;
+    padding: 0;
+}
+
+.links-list a {
+    font-size: 16px;
+}
+
+a {
+    color: #667E4A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links-list img {
+    vertical-align: middle;
+
+    max-width: 300px;
+    height: auto;
+
+    display: block;
+}
+
+.no-href {
+    cursor: default;
+}
+
+.no-href:hover {
+    color: #cc0000;
+}
+
+.note {
+    margin-top: 3px;
+
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* =========================================
+   КАРТА ССЫЛОК
+   ========================================= */
+
+.image-map {
+    position: relative;
+
+    display: inline-block;
+
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+.image-map img {
+    display: block;
+
+    max-width: 480px;
+    height: auto;
+    width: 100%;
+}
+
+.applicant-link {
+    position: absolute;
+
+    top: 0;
+    left: 16.67%;
+
+    width: 66.67%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    z-index: 10;
+}
+
+/* =========================================
+   ТАБЛИЦА
+   ========================================= */
+
+.table-section {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.table-section h2 {
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+/* Сама таблица */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 2px solid #667E4A;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Заголовок таблицы */
+
+caption {
+    caption-side: top;
+
+    padding: 0 0 15px 0;
+
+    color: #445533;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: left;
+}
+
+/* Все ячейки */
+
+th,
+td {
+    padding: 12px 14px;
+
+    border: 1px solid #b8c5a9;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Верхняя строка заголовка */
+
+thead tr:first-child th {
+    background: #667E4A;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Вторая строка заголовка */
+
+thead tr:nth-child(2) th {
+    background: #7d955f;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Столбец с номером */
+
+tbody td:first-child {
+    width: 60px;
+
+    font-weight: bold;
+    color: #445533;
+}
+
+/* Название дисциплины */
+
+tbody td:nth-child(2) {
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Часы */
+
+tbody td:nth-child(3) {
+    width: 90px;
+}
+
+/* Семестр */
+
+tbody td:nth-child(4) {
+    width: 100px;
+}
+
+/* Форма контроля */
+
+tbody td:nth-child(5) {
+    width: 150px;
+}
+
+/* Чередование строк */
+
+tbody tr:nth-child(odd) {
+    background: #f2f5ed;
+}
+
+tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+
+/* Наведение мышки на строку */
+
+tbody tr:hover {
+    background: #e7efdf;
+}
+
+/* Небольшое выделение ячеек */
+
+tbody td {
+    color: #333333;
+}
+
+/* =========================================
+   ТАБЛИЦА НА ТЕЛЕФОНЕ
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* =========================================
+   ФОРМА
+   ========================================= */
+
+#myForm {
+    margin-top: 30px;
+}
+
+#myForm > p {
+    display: flex;
+    align-items: center;
+
+    margin: 18px 0;
+}
+
+/* Все подписи имеют одинаковую ширину */
+
+#myForm > p > label {
+    display: flex;
+    align-items: center;
+
+    width: 135px;
+    min-width: 135px;
+
+    font-size: 16px;
+}
+
+/* Поля */
+
+#myForm input[type="text"],
+#myForm input[type="tel"],
+#myForm input[type="email"] {
+    width: 330px;
+
+    height: 46px;
+
+    padding: 8px 12px;
+
+    margin: 0;
+
+    border: 1px solid #999;
+    border-radius: 6px;
+
+    font: inherit;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+/* Дата рождения */
+
+#myForm input[type="date"] {
+    width: 165px;
+
+    height: 46px;
+
+    padding: 8px 12px;
+
+    margin-left: 0;
+
+    border: 1px solid #999;
+    border-radius: 6px;
+
+    font: inherit;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+/* Поля при наведении */
+
+#myForm input[type="text"]:focus,
+#myForm input[type="tel"]:focus,
+#myForm input[type="email"]:focus,
+#myForm input[type="date"]:focus,
+#myForm textarea:focus {
+    outline: none;
+
+    border-color: #667E4A;
+
+    box-shadow: 0 0 0 2px rgba(102, 126, 74, 0.15);
+}
+
+/* =========================================
+   RADIO И CHECKBOX
+   ========================================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* =========================================
+   FIELDSET
+   ========================================= */
+
+fieldset {
+    margin: 20px 0;
+    padding: 15px;
+
+    border: 1px solid #aaa;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+fieldset legend {
+    padding: 0 5px;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+fieldset label {
+    display: inline-block;
+
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   TEXTAREA
+   ========================================= */
+
+#myForm textarea {
+    display: block;
+
+    width: 100%;
+    min-height: 180px;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border: 1px solid #999;
+    border-radius: 6px;
+
+    font: inherit;
+
+    resize: vertical;
+
+    background: #ffffff;
+}
+
+/* =========================================
+   КНОПКА
+   ========================================= */
+
+#myForm button {
+    padding: 10px 22px;
+
+    border: 1px solid #667E4A;
+    border-radius: 5px;
+
+    background: #667E4A;
+    color: #ffffff;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+#myForm button:hover {
+    background: #53663b;
+}
+
+/* =========================================
+   АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНА
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    #myForm > p {
+        display: block;
+    }
+
+    #myForm > p > label {
+        width: auto;
+        min-width: 0;
+
+        margin-bottom: 5px;
+    }
+
+    #myForm input[type="text"],
+    #myForm input[type="tel"],
+    #myForm input[type="email"] {
+        width: 100%;
+    }
+
+    #myForm input[type="date"] {
+        width: 180px;
+    }
+}
+
+/* =========================================
+   RADIO И CHECKBOX
+   ========================================= */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* =========================================
+   FIELDSET
+   ========================================= */
+
+fieldset {
+    margin: 18px 0;
+    padding: 15px;
+
+    border: 1px solid #aaa;
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+fieldset legend {
+    padding: 0 5px;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+fieldset label {
+    display: inline-block;
+
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   КНОПКА
+   ========================================= */
+
+button {
+    padding: 10px 22px;
+
+    border: 1px solid #667E4A;
+    border-radius: 5px;
+
+    background: #667E4A;
+    color: #ffffff;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #53663b;
+}
+
+/* =========================================
+   "ДАННЫЕ СОХРАНЕНЫ"
+   ========================================= */
+
+.message {
+    display: none;
+
+    margin-top: 15px;
+    padding: 12px 15px;
+
+    border-radius: 6px;
+
+    background: #e7efdf;
+    color: #445533;
+
+    font-weight: bold;
+}
+
+.message-visible {
+    display: block;
+}
+
+/* =========================================
+   НАВЕРХ
+   ========================================= */
+
+.back-to-top {
+    margin-top: 25px;
+}
+
+/* =========================================
+   ПОДВАЛ
+   ========================================= */
+
+.site-footer {
+    width: 100%;
+
+    background: #445533;
+    color: #ffffff;
+}
+
+.site-footer .content-width {
+    padding: 20px 30px;
+
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* =========================================
+   АДАПТАЦИЯ ДЛЯ НЕБОЛЬШОГО ЭКРАНА
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .header-inner {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+
+        padding: 15px;
+    }
+
+    .header-image-wrapper {
+        flex: 0 0 auto;
+
+        width: 150px;
+        height: 120px;
+    }
+
+    .header-text-group {
+        width: 100%;
+    }
+
+    .header-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .nav-inner {
+        flex-direction: column;
+    }
+
+    .site-nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main.content-width {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        width: 100%;
+    }
+
+    input[type="date"] {
+        width: 180px;
+    }
+
+    fieldset label {
+        margin-right: 10px;
+    }
+}
+
