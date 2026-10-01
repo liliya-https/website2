@@ -27,22 +27,16 @@
     </div>
 </header>
 
-
 <nav class="site-nav" aria-label="Основная навигация">
     <div class="content-width nav-inner">
         <a href="#top">Главная</a>
         <a href="#links">Ссылки</a>
         <a href="#table">Таблица</a>
-        <a href="#form">Форма</a>
+        <a href="#myForm">Форма</a>
     </div>
 </nav>
 
-
 <main class="content-width">
-
-    <!-- =========================================
-         ССЫЛКИ
-         ========================================= -->
 
     <section id="links">
 
@@ -70,10 +64,8 @@
                 <a href="https://rus-buket.ru/files/blog/articles/lilii-aprel.jpg"
                    target="_blank"
                    rel="noopener noreferrer">
-
                     <img src="IMAGES/liliya.jpg"
                          alt="Лилия">
-
                 </a>
             </li>
 
@@ -215,7 +207,6 @@
 
         </ul>
 
-
         <h3>
             Нумерованный список ссылок с подписями title:
         </h3>
@@ -250,23 +241,24 @@
 
         </ol>
 
+        <!-- ИСПРАВЛЕНО ТОЛЬКО ЗДЕСЬ:
+             раньше здесь был <li> вне списка -->
 
-        <li>
+        <p>
             <a href="ftp://students:password1202@ftp.lilcite/FTP/FTP.html">
                 Файл на FTP-сервере с авторизацией
             </a>
-        </li>
+        </p>
 
     </section>
-
 
     <!-- =========================================
          ТАБЛИЦА
          ========================================= -->
 
     <section id="table"
-         class="table-section"
-         aria-labelledby="table-title">
+             class="table-section"
+             aria-labelledby="table-title">
 
         <h2 id="table-title">
             Таблица
@@ -315,7 +307,6 @@
                     </tr>
 
                 </thead>
-
 
                 <tbody>
 
@@ -378,59 +369,46 @@
 
     </section>
 
-
     <!-- =========================================
          ФОРМА
          ========================================= -->
 
     <form id="myForm">
 
-        <!-- ФИО -->
-<!-- ФИО -->
+        <p>
+            <label for="fio">
+                ФИО:
+            </label>
 
-<p>
-    <label for="fio">
-        ФИО:
-    </label>
-
-    <input
-        type="text"
-        id="fio"
-        name="fio"
-        placeholder="Иванов Иван Иванович"
-        required
-        pattern="[А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)? [А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)? [А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)?"
-        title="Введите фамилию, имя и отчество. Например: Иванов Иван Иванович"
-    >
-</p>
-
-
-        <!-- ТЕЛЕФОН -->
-
-     <!-- ТЕЛЕФОН -->
-
-<p>
-    <label for="tel">
-        Телефон:
-    </label>
-
-    <input
-        type="tel"
-        id="tel"
-        name="tel"
-        placeholder="+79001234567"
-        required
-        inputmode="numeric"
-        pattern="(?:\+7|8)[0-9]{10}"
-        title="Введите номер в формате +79001234567 или 89001234567"
-    >
-</p>
-
-
-        <!-- EMAIL -->
+            <input
+                type="text"
+                id="fio"
+                name="fio"
+                placeholder="Иванов Иван Иванович"
+                required
+                pattern="[А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)? [А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)? [А-Яа-яЁё]+(?:-[А-Яа-яЁё]+)?"
+                title="Введите фамилию, имя и отчество. Например: Иванов Иван Иванович"
+            >
+        </p>
 
         <p>
+            <label for="tel">
+                Телефон:
+            </label>
 
+            <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="+79001234567"
+                required
+                inputmode="numeric"
+                pattern="(?:\+7|8)[0-9]{10}"
+                title="Введите номер в формате +79001234567 или 89001234567"
+            >
+        </p>
+
+        <p>
             <label for="email">
                 E-mail:
             </label>
@@ -442,14 +420,9 @@
                 placeholder="example@mail.ru"
                 required
             >
-
         </p>
 
-
-        <!-- ДАТА РОЖДЕНИЯ -->
-
         <p>
-
             <label for="birthdate">
                 Дата рождения:
             </label>
@@ -460,11 +433,7 @@
                 name="birthdate"
                 required
             >
-
         </p>
-
-
-        <!-- ПОЛ -->
 
         <fieldset>
 
@@ -485,7 +454,6 @@
 
             </label>
 
-
             <label>
 
                 <input
@@ -500,15 +468,11 @@
 
         </fieldset>
 
-
-        <!-- ЯЗЫК ПРОГРАММИРОВАНИЯ -->
-
         <fieldset>
 
             <legend>
                 Любимый язык программирования
             </legend>
-
 
             <label>
                 <input
@@ -520,7 +484,6 @@
                 Pascal
             </label>
 
-
             <label>
                 <input
                     type="checkbox"
@@ -529,7 +492,6 @@
                 >
                 C
             </label>
-
 
             <label>
                 <input
@@ -540,7 +502,6 @@
                 C++
             </label>
 
-
             <label>
                 <input
                     type="checkbox"
@@ -549,7 +510,6 @@
                 >
                 JavaScript
             </label>
-
 
             <label>
                 <input
@@ -560,7 +520,6 @@
                 PHP
             </label>
 
-
             <label>
                 <input
                     type="checkbox"
@@ -569,7 +528,6 @@
                 >
                 Python
             </label>
-
 
             <label>
                 <input
@@ -580,7 +538,6 @@
                 Java
             </label>
 
-
             <label>
                 <input
                     type="checkbox"
@@ -589,7 +546,6 @@
                 >
                 Haskell
             </label>
-
 
             <label>
                 <input
@@ -600,7 +556,6 @@
                 Clojure
             </label>
 
-
             <label>
                 <input
                     type="checkbox"
@@ -609,7 +564,6 @@
                 >
                 Prolog
             </label>
-
 
             <label>
                 <input
@@ -621,9 +575,6 @@
             </label>
 
         </fieldset>
-
-
-        <!-- БИОГРАФИЯ -->
 
         <div class="biography-field">
 
@@ -639,9 +590,6 @@
             ></textarea>
 
         </div>
-
-
-        <!-- СОГЛАСИЕ -->
 
         <p>
 
@@ -659,17 +607,11 @@
 
         </p>
 
-
-        <!-- КНОПКА -->
-
         <button type="submit">
             Сохранить
         </button>
 
     </form>
-
-
-    <!-- Сообщение после сохранения -->
 
     <div id="message"
          class="message"
@@ -682,7 +624,6 @@
 
     </div>
 
-
     <p class="back-to-top">
 
         <a href="#top">
@@ -692,11 +633,6 @@
     </p>
 
 </main>
-
-
-<!-- =========================================
-     ПОДВАЛ
-     ========================================= -->
 
 <footer class="site-footer">
 
@@ -714,11 +650,6 @@
 
 </footer>
 
-
-<!-- =========================================
-     JAVASCRIPT
-     ========================================= -->
-
 <script>
 
     const form =
@@ -727,26 +658,11 @@
     const message =
         document.getElementById("message");
 
-
-    /* =========================================
-       ДАТА РОЖДЕНИЯ
-
-       Нельзя:
-       - младше 0 лет;
-       - старше 100 лет.
-
-       Можно:
-       - сегодняшнюю дату;
-       - любую дату в диапазоне последних 100 лет.
-       ========================================= */
-
     const birthdate =
         document.getElementById("birthdate");
 
-
     const today =
         new Date();
-
 
     const maxDate =
         new Date(
@@ -755,14 +671,12 @@
             today.getDate()
         );
 
-
     const minDate =
         new Date(
             today.getFullYear() - 100,
             today.getMonth(),
             today.getDate()
         );
-
 
     function formatDate(date) {
 
@@ -779,7 +693,6 @@
                 date.getDate()
             ).padStart(2, "0");
 
-
         return (
             year +
             "-" +
@@ -789,19 +702,11 @@
         );
     }
 
-
     birthdate.min =
         formatDate(minDate);
 
     birthdate.max =
         formatDate(maxDate);
-
-
-    /* =========================================
-       ОБЯЗАТЕЛЬНЫЙ ВЫБОР ЯЗЫКА
-
-       Нужно выбрать хотя бы один язык.
-       ========================================= */
 
     const languageCheckboxes =
         Array.from(
@@ -809,7 +714,6 @@
                 'input[name="language"]'
             )
         );
-
 
     function validateLanguages() {
 
@@ -822,15 +726,8 @@
                 }
             );
 
-
-        /*
-         * Если ни один язык не выбран,
-         * первый checkbox становится required.
-         */
-
         languageCheckboxes[0].required =
             !selected;
-
 
         if (selected) {
 
@@ -848,7 +745,6 @@
 
     }
 
-
     languageCheckboxes.forEach(
         function(checkbox) {
 
@@ -860,28 +756,13 @@
         }
     );
 
-
     validateLanguages();
-
-
-    /* =========================================
-       ОТПРАВКА ФОРМЫ
-       ========================================= */
 
     form.addEventListener(
         "submit",
         function(event) {
 
-            /*
-             * Проверяем языки
-             */
-
             validateLanguages();
-
-
-            /*
-             * Проверяем ВСЕ обязательные поля
-             */
 
             if (!form.checkValidity()) {
 
@@ -893,27 +774,12 @@
 
             }
 
-
-            /*
-             * Не перезагружаем страницу
-             */
-
             event.preventDefault();
-
-
-            /*
-             * Получаем выбранный пол
-             */
 
             const selectedGender =
                 form.querySelector(
                     'input[name="gender"]:checked'
                 );
-
-
-            /*
-             * Собираем данные
-             */
 
             const data = {
 
@@ -959,25 +825,14 @@
 
             };
 
-
-            /*
-             * Сохраняем данные
-             */
-
             localStorage.setItem(
                 "userData",
                 JSON.stringify(data)
             );
 
-
-            /*
-             * Показываем сообщение
-             */
-
             message.classList.add(
                 "message-visible"
             );
-
 
             setTimeout(
                 function() {
@@ -992,33 +847,60 @@
 
         }
     );
-    const phoneInput = document.getElementById("tel");
 
-phoneInput.addEventListener("input", function () {
+    const phoneInput =
+        document.getElementById("tel");
 
-    let value = this.value;
+    phoneInput.addEventListener(
+        "input",
+        function () {
 
-    // Разрешаем только цифры и один плюс
-    value = value.replace(/[^\d+]/g, "");
+            let value = this.value;
 
-    // Плюс разрешён только в самом начале
-    if (value.includes("+")) {
-        if (value[0] !== "+") {
-            value = value.replace(/\+/g, "");
-        } else {
-            value = "+" + value.slice(1).replace(/\+/g, "");
+            value =
+                value.replace(
+                    /[^\d+]/g,
+                    ""
+                );
+
+            if (value.includes("+")) {
+
+                if (value[0] !== "+") {
+
+                    value =
+                        value.replace(
+                            /\+/g,
+                            ""
+                        );
+
+                } else {
+
+                    value =
+                        "+" +
+                        value
+                            .slice(1)
+                            .replace(
+                                /\+/g,
+                                ""
+                            );
+                }
+            }
+
+            if (value.startsWith("+")) {
+
+                value =
+                    value.slice(0, 12);
+
+            } else {
+
+                value =
+                    value.slice(0, 11);
+            }
+
+            this.value = value;
+
         }
-    }
-
-    // Ограничиваем длину
-    if (value.startsWith("+")) {
-        value = value.slice(0, 12);
-    } else {
-        value = value.slice(0, 11);
-    }
-
-    this.value = value;
-});
+    );
 
 </script>
 
